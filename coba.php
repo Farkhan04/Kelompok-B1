@@ -13,5 +13,5 @@ echo "Tugas II : " . $tugas2."<br>";
 echo "Jumlah Tugas : ".$jumlah."<br>";
 echo "Rerata Tugas : ".$rerata."<br>";
 echo "Gabungan String Tugas: " . $gabungan; 
-echo "123432233"
+echo "12343"
 ?>
