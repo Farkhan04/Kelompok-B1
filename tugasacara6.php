@@ -24,11 +24,11 @@ for ($i = 0; $i < 3; $i++) {
 }
 
 // Menampilkan hasil penjumlahan matriks
-echo "Hasil penjumlahan matriks A dan B adalah:\n";
+echo "Hasil penjumlahan matriks A dan B adalah:<br>";
 for ($i = 0; $i < 3; $i++) {
     for ($j = 0; $j < 3; $j++) {
         echo $C[$i][$j] . " ";
     }
-    echo "\n";
+    echo "<br>";
 }
 ?>
