@@ -5,9 +5,7 @@ $A = [
     [2, 2, 2],
     [3, 3, 3]
 ];
-foreach($A as $P){
-    echo $P;
-}
+
 // Matriks B
 $B = [
     [3, 3, 3],
