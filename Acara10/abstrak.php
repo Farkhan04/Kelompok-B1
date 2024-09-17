@@ -1,9 +1,10 @@
+
 <?php
-abstract class Car{
+abstract class Mobil{
     protected $tankVolume;
     public function setTankVolume($volume){
-        $this->TankVolume = $volume;
+        $this->tankVolume = $volume;
     }
     abstract public function calcNumMilesOnFullTank();
 }
-?>
+?> 
