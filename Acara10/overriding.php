@@ -1,5 +1,6 @@
 <?php
 class Car{
+    //final public function hello(){
     public function hello(){
         return "beep";
     }
