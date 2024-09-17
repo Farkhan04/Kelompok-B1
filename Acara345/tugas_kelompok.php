@@ -1,8 +1,9 @@
 <?php
-// fungsi yang bernama faktorialFor dengan parameter $f
-function faktorialFor($f) {
+// fungsi yang bernama faktorial For dengan parameter $f
+function faktorialke1($f)
+{
     $hasil = 1;
-    
+
     // menghitung faktorial menggunakan perulangan For
     for ($i = 1; $i <= $f; $i++) {
         $hasil *= $i;
@@ -10,16 +11,14 @@ function faktorialFor($f) {
     return $hasil;
 }
 
-// fungsi yang bernama faktorialWhile dengan parameter $w
-function faktorialWhile($w) {
+// fungsi yang bernama faktorial for dengan parameter $w
+function faktorialke2($w)
+{
     $hasil = 1;
-    $i = 1;
-    
-    // menggunakan perulangan while untuk menghitung faktorial
-    while ($i <= $w) {
+    // menggunakan perulangan for untuk menghitung faktorial
+    for ($i = 1; $i <= $w; $i++) {
         $hasil *= $i;
-        $i++;
-    } 
+    }
     return $hasil;
 }
 
@@ -27,13 +26,29 @@ function faktorialWhile($w) {
 $bilangan1 = 5;
 $bilangan2 = 4;
 
-// memanggil fungsi faktorialFor dan mengisi parameter dengan angka yang ingin difaktorialkan
-$faktorial1 = faktorialFor($bilangan1);
+// menggunakan if-else untuk menentukan apakah menggunakan faktorialke1 atau faktorialke2
+if ($bilangan1 >= 5) {
+    $faktorial1 = faktorialke1($bilangan1);
+} else {
+    $faktorial1 = faktorialke2($bilangan1);
+}
 
-// memanggil fungsi faktorialWhile dan mengisi parameter dengan angka yang ingin difaktorialkan
-$faktorial2 = faktorialWhile($bilangan2);
+if ($bilangan2 >= 5) {
+    $faktorial2 = faktorialke1($bilangan2);
+} else {
+    $faktorial2 = faktorialke2($bilangan2);
+}
+
+
+// // menggunakan satu if-else untuk menentukan apakah menggunakan faktorialke1 atau faktorialke2
+// if ($bilangan1 >= 5 || $bilangan2 >= 5) {
+//     $faktorial1 = faktorialke1($bilangan1);
+//     $faktorial2 = faktorialke1($bilangan2);
+// } else {
+//     $faktorial1 = faktorialke2($bilangan1);
+//     $faktorial2 = faktorialke2($bilangan2);
+// }
 
 // menampilkan hasil
-echo "Faktorial dari $bilangan1 adalah: " . $faktorial1 . "<br>";
+echo "Faktorial dari $bilangan1 adalah: " . $faktorial1 . "\n" . "<br>";
 echo "Faktorial dari $bilangan2 adalah: " . $faktorial2;
-?>
