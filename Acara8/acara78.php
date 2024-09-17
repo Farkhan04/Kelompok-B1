@@ -1,43 +1,39 @@
 <?php
-// Define the Calculator class
+
 class Calculator {
-    // Method for addition
-    public function add($a, $b) {
+   
+    public function penjumlahan($a, $b) {
         return $a + $b;
     }
 
-    // Method for subtraction
-    public function subtract($a, $b) {
+    public function pengurangan($a, $b) {
         return $a - $b;
     }
 
-    // Method for multiplication
-    public function multiply($a, $b) {
+    public function perkalian($a, $b) {
         return $a * $b;
     }
 
-    // Method for division
-    public function divide($a, $b) {
+    public function pembagian($a, $b) {
         if ($b != 0) {
             return $a / $b;
         } else {
-            return "Cannot divide by zero!";
+            return "error";
         }
     }
 }
 
-// Create an instance of the Calculator class
 $calc = new Calculator();
 
-// Example usage
-$number1 = 10;
-$number2 = 5;
 
-echo "Number 1: " . $number1 . "<br>";
-echo "Number 2: " . $number2 . "<br><br>";
+$bil1 = 10;
+$bil2 = 5;
 
-echo "Addition: " . $calc->add($number1, $number2) . "<br>";
-echo "Subtraction: " . $calc->subtract($number1, $number2) . "<br>";
-echo "Multiplication: " . $calc->multiply($number1, $number2) . "<br>";
-echo "Division: " . $calc->divide($number1, $number2) . "<br>";
+echo "Bilangan 1: " . $bil1 . "<br>";
+echo "Bilangan 2: " . $bil2 . "<br><br>";
+
+echo "Penjumlahan: " . $calc->penjumlahan($bil1, $bil2) . "<br>";
+echo "Pengurangan: " . $calc->pengurangan($bil1, $bil2) . "<br>";
+echo "Perkalian: " . $calc->perkalian($bil1, $bil2) . "<br>";
+echo "Pembagian: " . $calc->pembagian($bil1, $bil2) . "<br>";
 ?>
