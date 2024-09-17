@@ -1,6 +1,6 @@
 
 <?php
-abstract class Mobil{
+abstract class Mobil {
     protected $tankVolume;
     public function setTankVolume($volume){
         $this->tankVolume = $volume;
