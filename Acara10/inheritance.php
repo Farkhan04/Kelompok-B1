@@ -13,8 +13,8 @@ class Car{
 class SportsCar extends Car{
 }
 
-$sporstCar1 = new SportsCar();
-$sporstCar1 -> setModel('Mercedes Benz');
+$sportsCar1 = new SportsCar();
+$sportsCar1 -> setModel('Mercedes Benz');
 
-echo $sporstCar1 -> hello();
+echo $sportsCar1 -> hello();
 ?>
