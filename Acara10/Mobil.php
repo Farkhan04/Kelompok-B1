@@ -4,22 +4,22 @@
 class MobilLengkap {
     // Metode untuk menonton TV
     public function nontonTV() {
-        echo "TV dihidupkan.\n";
-        echo "TV mencari channel.\n";
-        echo "TV menampilkan gambar.\n";
+        echo "TV dihidupkan.<br>";
+        echo "TV mencari channel.<br>";
+        echo "TV menampilkan gambar.<br>";
     }
     
     // Metode lain yang mungkin ada di kelas MobilLengkap
     public function hidupkanMobil() {
-        echo "Mobil dihidupkan.\n";
+        echo "Mobil dihidupkan.<br>";
     }
 
     public function matikanMobil() {
-        echo "Mobil dimatikan.\n";
+        echo "Mobil dimatikan.<br>";
     }
 
     public function ubahGigi($gigi) {
-        echo "Gigi diubah ke: $gigi.\n";
+        echo "Gigi diubah ke: $gigi.<br>";
     }
 }
 

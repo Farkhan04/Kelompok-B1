@@ -34,9 +34,9 @@ $faktorial2 = faktorialke2($bilangan2);
 function cekGenapGanjil($hasilFaktorial, $bilangan)
 {
     if ($bilangan % 2 == 0) {
-        echo "$bilangan adalah Bilangan Genap yang memiliki faktorial: $hasilFaktorial \n";
+        echo "$bilangan adalah Bilangan Genap yang memiliki faktorial: $hasilFaktorial <br>";
     } else {
-        echo "$bilangan adalah Bilangan Ganjil yang memiliki faktorial: $hasilFaktorial \n";
+        echo "$bilangan adalah Bilangan Ganjil yang memiliki faktorial: $hasilFaktorial <br>";
     }
 }
 
