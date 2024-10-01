@@ -15,11 +15,8 @@ class food
 
 <?php
 $food1 = new food();
-// properti bisa di akses secara langsung 
-echo "Aku suka " . $food1->set_food('Rawon');
 
-//echo "Hai " . $person1->get_name(); 
+echo "Aku suka " . $food1->set_food('Rawon');
 echo "<hr>";
-// methob tidak bisa di akses secara langsung 
 echo $food1->get_food();
 ?>
