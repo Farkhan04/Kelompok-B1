@@ -1,16 +1,23 @@
 <?php
-// Mengimpor file Persegi.php, Segitiga.php, dan Lingkaran.php
-require_once 'Persegi.php';
-require_once 'Segitiga.php';
-require_once 'Lingkaran.php';
+// Mengimpor file yang diperlukan
+require_once 'Lingkaran.php';       // Mengimpor file yang berisi kelas Lingkaran
+require_once 'PersegiPanjang.php'; // Mengimpor file yang berisi kelas PersegiPanjang
 
-// Membuat object dari masing-masing class
-$persegi = new Persegi();
-$segitiga = new Segitiga();
-$lingkaran = new Lingkaran();
+try {
+    // Membuat objek $tanahAgus dari kelas Lingkaran dengan jari-jari 3
+    $tanahAgus = new Lingkaran(3);
 
-// Menghitung dan menampilkan luas masing-masing bangun datar
-echo "Luas Persegi dengan sisi 4: " . $persegi->hitungLuasPersegi(4) . "<br>";
-echo "Luas Segitiga dengan alas 4 dan tinggi 5: " . $segitiga->hitungLuasSegitiga(4, 5) . "<br>";
-echo "Luas Lingkaran dengan jari-jari 7: " . $lingkaran->hitungLuasLingkaran(7) . "<br>";
-?>
+    // Membuat objek $tanahChandra dari kelas PersegiPanjang dengan panjang 3 dan lebar 4
+    $tanahChandra = new PersegiPanjang(3, 4);
+
+    // Menampilkan informasi luas tanah Agus dan jenis tanaman yang ditanam di sana
+    echo "Tanah Agus seluas " . $tanahAgus->hitungLuas() . " m2 \n";
+    echo $tanahAgus->ditanami() . "\n\n";
+
+    // Menampilkan informasi luas tanah Chandra dan jenis tanaman yang ditanam di sana
+    echo "Tanah Chandra seluas " . $tanahChandra->hitungLuas() . " m2 \n";
+    echo $tanahChandra->ditanami() . "\n";
+} catch (Exception $e) {
+    // Menangani exception jika terjadi kesalahan saat membuat objek
+    echo 'Error: ' . $e->getMessage();
+}
