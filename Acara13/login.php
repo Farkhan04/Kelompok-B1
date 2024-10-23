@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
 
     if(!empty(trim($email)) && !empty(trim($pass))){
         //select data berdasarkan username dari database
-        $query  = "SELECT * FROM user_detail WHERE user_email = '$email";
+        $query  = "SELECT * FROM user_detail WHERE user_email = '$email'";
         $result = mysqli_query($koneksi, $query);
         $num    = mysqli_num_rows($result);
         
