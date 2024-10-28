@@ -3,7 +3,7 @@ interface Logger{
     public function log($message);
 }
 
-class FileLogger implements Loogger{
+class FileLogger implements Logger{
     private $handle;
     private $logFile;
 

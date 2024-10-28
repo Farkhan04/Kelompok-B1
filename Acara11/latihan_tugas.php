@@ -44,7 +44,7 @@ class Segitiga implements hitungLuas {
 ?>
 
 <?php
-class Lingkaran implements hitungLuas {
+class Lingkaran1 implements hitungLuas {
     // Implementasi fungsi menghitung luas lingkaran
     public function hitungLuasLingkaran($jariJari) {
         return 3.14 * $jariJari * $jariJari;
@@ -71,6 +71,6 @@ $segitiga = new Segitiga();
 echo "Luas Segitiga dengan alas 5 dan tinggi 10: " . $segitiga->hitungLuasSegitiga(5, 10) . "<br>";
 
 // Membuat objek dari kelas Lingkaran
-$lingkaran = new Lingkaran();
+$lingkaran = new Lingkaran1();
 echo "Luas Lingkaran dengan jari-jari 7: " . $lingkaran->hitungLuasLingkaran(7) . "<br>";
 ?>
