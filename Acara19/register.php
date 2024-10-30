@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <h2>Login MD5 - www.jti.com</h2>
+    <h2>Daftar</h2>
 
     <!-- cek pesan notifikasi -->
     <?php
@@ -23,7 +23,7 @@
             <p>password: <input type="password" name="txt_pass" required></p>
             <button type="submit" name="register">Register</button>
         </form>
-        <p><a href="cek_login.php">Login</p>
+        <p><a href="index.php">Login</p>
     </body>
 
 </html>

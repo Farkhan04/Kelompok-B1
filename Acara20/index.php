@@ -12,5 +12,8 @@
         <input type="password" name="password" required><br><br>
         <button type="submit">Login</button>
     </form>
+
+    <br>
+    <p><a href="register.php">Register</a></p> <!-- Link ke halaman register -->
 </body>
 </html>
