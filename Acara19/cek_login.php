@@ -21,5 +21,6 @@ if ($cek > 0) {
     header("location:admin/index.php");
 } else {
     header("location:index.php?pesan=gagal");
+    exit;
 }
 ?>

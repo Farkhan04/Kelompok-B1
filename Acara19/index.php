@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Membuat Login Dengan PHP dan MySQLi Menggunakan MD5 - WWW.JTI.COM</title>
 </head>
+
 <body>
     <h2>Login MD5 - www.jti.com</h2>
-    <br/>
+    <br />
     <!-- cek pesan notifikasi -->
     <?php
     if (isset($_GET['pesan'])) {
@@ -18,8 +20,8 @@
         }
     }
     ?>
-    <br/>
-    <br/>
+    <br />
+    <br />
     <form method="post" action="cek_login.php">
         <table>
             <tr>
@@ -33,11 +35,17 @@
                 <td><input type="password" name="password" placeholder="Masukkan password"></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td><input type="submit" value="LOGIN"></td>
+                <td colspan="3">
+                    <input type="submit" value="LOGIN">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;">
+                    <a href="register.php">Daftar akun</a>
+                </td>
             </tr>
         </table>
     </form>
 </body>
+
 </html>
