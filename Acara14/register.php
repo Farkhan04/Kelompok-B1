@@ -1,4 +1,3 @@
-
 <?php
 require ('koneksi.php'); 
 require ('query.php');

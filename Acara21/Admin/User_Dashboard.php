@@ -16,25 +16,35 @@ $result = mysqli_query($koneksi, $query);
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .img-table {
-            max-width: 150px; /* Sesuaikan ukuran gambar agar tidak terlalu besar */
-            height: auto; /* Menjaga rasio aspek gambar */
-            display: block; /* Mengatur gambar agar bisa dipusatkan */
-            margin: 0 auto; /* Memusatkan gambar di dalam kolom */
+            max-width: 150px;
+            /* Sesuaikan ukuran gambar agar tidak terlalu besar */
+            height: auto;
+            /* Menjaga rasio aspek gambar */
+            display: block;
+            /* Mengatur gambar agar bisa dipusatkan */
+            margin: 0 auto;
+            /* Memusatkan gambar di dalam kolom */
         }
 
         .card {
-            overflow: hidden; /* Menghindari overflow konten */
+            overflow: hidden;
+            /* Menghindari overflow konten */
         }
 
         .card-body {
-            display: flex; /* Menggunakan flexbox untuk tata letak */
-            justify-content: space-between; /* Ruang antara konten dan gambar */
-            align-items: center; /* Vertikal center */
+            display: flex;
+            /* Menggunakan flexbox untuk tata letak */
+            justify-content: space-between;
+            /* Ruang antara konten dan gambar */
+            align-items: center;
+            /* Vertikal center */
         }
 
         .card-text {
-            flex: 1; /* Membiarkan teks mengisi ruang yang tersisa */
-            margin-right: 20px; /* Jarak antara teks dan gambar */
+            flex: 1;
+            /* Membiarkan teks mengisi ruang yang tersisa */
+            margin-right: 20px;
+            /* Jarak antara teks dan gambar */
         }
     </style>
 </head>
@@ -42,6 +52,11 @@ $result = mysqli_query($koneksi, $query);
 <body>
     <div class="container">
         <h2 class="mt-5 text-center">User Dashboard</h2>
+
+        <div class="text-center mt-4">
+
+            <a href="../logout.php" class="btn btn-danger ml-2">Logout</a>
+        </div>
 
         <div class="mt-4">
             <?php
